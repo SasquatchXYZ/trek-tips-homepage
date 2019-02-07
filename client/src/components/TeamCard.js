@@ -10,7 +10,9 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     minWidth: 275,
-    maxWidth: 450
+    maxWidth: 450,
+    elevation: 24,
+    border: '1px solid #B500A9'
   },
   bullet: {
     display: 'inline-block',
@@ -23,6 +25,9 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+  media: {
+
+  }
 };
 
 function SimpleCard(props) {
@@ -73,7 +78,6 @@ function SimpleCard(props) {
           </Button>
           : null}
       </CardActions>
-
     </Card>
   );
 }

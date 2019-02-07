@@ -39,12 +39,18 @@ class TeamLayout extends React.Component {
             <Grid item>
               <TeamCard
                 name="Michael Kelley"
+                email="mjkelley354@gmail.com"
+                about="Product Manager for Systems Management Software at NCR Corporation.  I’m currently working as a product manager but have previously worked as a product owner and professional services business and technical consultant for the ATM and banking industry."
+                goal="I’m focused on process and technology improvements to improve data visualization and analysis for all things in Systems Management.  Traditionally the approaches to managing complex systems have been reactive and constrained by the rules defined by the technology choices.  I am interested in finding ways to use predictive algorithms and big data analysis to be proactive instead."
                 gitHub="https://github.com/mjkelley354"
               />
             </Grid>
             <Grid item>
               <TeamCard
                 name="Brintza Miles"
+                email="brintzamiles@gmail.com"
+                about="Experienced IT Analyst/Software Developer/Consultant with a demonstrated history of working in the management consulting, problem management and software development industries. Skilled in Management, Strategic Planning,"
+                goal="Full-Stack Development, Business Strategy, Business Analysis, Problem Management, and Software Development."
                 gitHub="https://github.com/brintzamiles"
               />
             </Grid>
@@ -55,6 +61,7 @@ class TeamLayout extends React.Component {
                 about="Public health informatician and epidemiologist working at the Centers for Disease Control and Prevention in situational awareness for emergency operations. Over 10 years working in electronic disease surveillance and public health information and data management systems."
                 goal="To develop intuitive, interoperable apps and data systems to help modernize public health and emergency operations operations"
                 gitHub="https://github.com/parkmee"
+                portfolio="https://parkmee.github.io/"
               />
             </Grid>
             <Grid item>
