@@ -6,8 +6,11 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 
-// const logger = require('morgan');
-// app.use(logger('dev'));
+const logger = require('morgan');
+
+if (process.env.NODE_ENV !== 'production') {
+  app.use(logger('dev'))
+}
 
 // Define Middleware Here -------------------------------------
 app.use(bodyParser.urlencoded({extended: true}));
