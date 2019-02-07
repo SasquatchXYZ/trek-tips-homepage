@@ -10,6 +10,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import API from '../utils/API';
 // import Icon from '@material-ui/core/Icon'
 
 const styles = theme => ({
@@ -58,6 +59,26 @@ class EmailForm extends Component {
 
     if (emailRX.test(this.state.email)) {
       console.log('Send to Database!');
+      API.submitEmail({email: this.state.email})
+        .then(res => {
+          console.log(res);
+          this.setState({
+            open: false,
+            message: false,
+            email: ''
+          });
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    } else {
+      console.log('That is not a valid Email...');
+      this.setState({message: true})
+    }
+
+
+    /*if (emailRX.test(this.state.email)) {
+      console.log('Send to Database!');
       this.setState({
         open: false,
         message: false,
@@ -66,7 +87,7 @@ class EmailForm extends Component {
     } else {
       console.log('That is not a valid Email...');
       this.setState({message: true})
-    }
+    }*/
   };
 
   render() {

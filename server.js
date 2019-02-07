@@ -6,6 +6,9 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 
+const logger = require('morgan');
+app.use(logger('dev'));
+
 // Define Middleware Here -------------------------------------
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -18,8 +21,8 @@ if (process.env.NODE_ENV === 'production') {
 // Define API Routes Here -------------------------------------
 app.use(routes);
 
-/*const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/trektipsemail';
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});*/
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/trektipsemail';
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 app.listen(PORT, () => {
   console.log(`API Server now on port: ${PORT}`)
