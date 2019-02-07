@@ -33,7 +33,8 @@ const styles = theme => ({
 class EmailForm extends Component {
   state = {
     open: false,
-    message: false,
+    messageShow: false,
+    message: '',
     email: ''
   };
 
@@ -64,16 +65,24 @@ class EmailForm extends Component {
           console.log(res);
           this.setState({
             open: false,
-            message: false,
+            messageShow: false,
+            message: '',
             email: ''
           });
         })
         .catch(err => {
-          console.log(err)
+          console.log(err);
+          this.setState({
+            messageShow: true,
+            message: 'Please Enter a Valid Email.'
+          })
         })
     } else {
       console.log('That is not a valid Email...');
-      this.setState({message: true})
+      this.setState({
+        messageShow: true,
+        message: 'Please Enter a valid Email.'
+      })
     }
 
 
@@ -119,10 +128,10 @@ class EmailForm extends Component {
                 To get updates about Trek Tips, please enter your email address here. Your email will only be used to
                 send you occasion updates about the app.
               </DialogContentText>
-              {!this.state.message
+              {!this.state.messageShow
                 ? null
                 : <DialogContentText color="primary">
-                  Please Enter a valid Email.
+                  {this.state.message}
                 </DialogContentText>
               }
               <TextField

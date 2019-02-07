@@ -10,12 +10,25 @@ module.exports = {
   },
 
   create: (req, res) => {
-    console.log(req.body);
+    console.log(req.body.email);
 
-    db.Email
+    const emailRX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+
+    if (emailRX.test(req.body.email)) {
+      console.log('Send to Database!');
+      db.Email
+        .create(req.body)
+        .then(dbEmail => res.status(200).json(dbEmail))
+        .catch(err => res.status(502).json(err))
+    } else {
+      console.log('That is not a valid Email...');
+      res.status(502).send('test')
+    }
+
+    /*db.Email
       .create(req.body)
       .then(dbEmail => res.status(200).json(dbEmail))
-      .catch(err => res.status(502).json(err))
+      .catch(err => res.status(502).json(err))*/
   }
 
 };

@@ -22,7 +22,10 @@ if (process.env.NODE_ENV === 'production') {
 app.use(routes);
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/trektipsemail';
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true})
+  .then(() => {console.log('Database Connection Established')},
+    err => {console.log('Connection Error', err)});
+
 
 app.listen(PORT, () => {
   console.log(`API Server now on port: ${PORT}`)
