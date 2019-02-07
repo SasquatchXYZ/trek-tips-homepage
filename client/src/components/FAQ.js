@@ -45,7 +45,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>What is Trek Tips?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Trek Tips is a free travel companion application that allows you to search within a given area for
               upcoming events or attractions based on categories or your personal preferences.
             </Typography>
@@ -56,7 +56,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>Why use Trek Tips?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Travelling can be stressful, and it can seem daunting to research things to do or see in a completely new
               and unfamiliar location, so we aim to take some of that stress away. By selecting your personal
               preferences Trek Tips will attempt to give you suggestions tailored specifically to you.
@@ -71,7 +71,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>What do I need to sign up?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               To set up an account you simply need an email address. We also give you the option of signing in with
               Google or Facebook if you would prefer those methods.
             </Typography>
@@ -82,7 +82,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>Can I save recommendations or suggestions for later?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Yes! You are able to bookmark and save anything you come across to view later. You can also mark these
               places has having been visited, but still keep them saved for your own personal history.
             </Typography>
@@ -93,7 +93,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>What personal data does Trek Tips have access to?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Trek Tips only requires an email address to sign up; no other personal information is required. If you
               chose to sign in using Facebook or Google, the only information that is collected from those sites is your
               name and email if it is listed. No additional information is necessary to use Trek Tips.
@@ -105,7 +105,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>Can I Change My Preferences?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Yes! At any time while you are using the application you are able to change or update your preferences.
               Simply navigate to the preferences screen from the home screen, make your changes and save them.
             </Typography>
@@ -116,7 +116,7 @@ class ControlledExpansionPanels extends React.Component {
             <Typography className={classes.heading}>How can I get Trek Tips?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography color="primary">
               Currently Trek Tips is in development before release, but in the future Trek Tips will be available on both iOS and Android from the Apple Store and Google Play Store respectively.  If you wish you get updates on the apps progress you can submit your email address below.
             </Typography>
           </ExpansionPanelDetails>
