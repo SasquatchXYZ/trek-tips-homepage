@@ -59,7 +59,7 @@ class TeamLayout extends React.Component {
                 name="Meeyoung Park"
                 email="parkmee@gmail.com"
                 about="Public health informatician and epidemiologist working at the Centers for Disease Control and Prevention in situational awareness for emergency operations. Over 10 years working in electronic disease surveillance and public health information and data management systems."
-                goal="To develop intuitive, interoperable apps and data systems to help modernize public health and emergency operations operations"
+                goal="To develop intuitive, interoperable apps and data systems to help modernize public health and emergency operations"
                 gitHub="https://github.com/parkmee"
                 portfolio="https://parkmee.github.io/"
               />

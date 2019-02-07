@@ -61,8 +61,8 @@ class ControlledExpansionPanels extends React.Component {
               and unfamiliar location, so we aim to take some of that stress away.  By selecting your personal
               preferences Trek Tips will attempt to give you suggestions tailored specifically to you.
               <br/>
-              You don't have to be travelling to use Trek Tips either.  Since it uses your selected preferences, you can
-              use it wherever you are to find restaurants or events you may not have discovered before.
+              Trek Tips is not exclusive to long distance travel.  Since it uses your selected preferences, you can use
+              it locally or wherever you are to find restaurants or events you may not have discovered before.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -83,8 +83,7 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              Yes! You are able to bookmark and save anything you come across to view later.  You can also mark these
-              places has having been visited, but still keep them saved for your own personal history.
+              Yes! You are able to bookmark and save anything you come across to view later.  You can also mark these places AS having been visited, but still keep them saved for your own personal history.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -106,8 +105,7 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              Yes! At any time while you are using the application you are able to change or update your preferences.
-              Simply navigate to the preferences screen from the home screen, make your changes and save them.
+              Yes! At any time while you are using the application you are able to change or update your preferences.  Simply navigate to the preferences screen from the home screen, make your changes and save them.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
