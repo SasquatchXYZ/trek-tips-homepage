@@ -32,7 +32,7 @@ class TeamLayout extends React.Component {
             container
             spacing={24}
             justify="space-evenly"
-            direction="row"
+            direction="column"
             alignItems="center"
 
           >

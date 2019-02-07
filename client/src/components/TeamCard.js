@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     minWidth: 275,
-    maxWidth: 450,
     elevation: 24,
     border: '1px solid #B500A9'
   },
@@ -40,7 +39,7 @@ function SimpleCard(props) {
         <Typography variant="h5" component="h2">
           {props.name}
         </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="primary" gutterBottom>
           {props.email}
         </Typography>
         <Typography component="p">
