@@ -6,9 +6,8 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 
-const logger = require('morgan');
-
 if (process.env.NODE_ENV !== 'production') {
+  const logger = require('morgan');
   app.use(logger('dev'))
 }
 
