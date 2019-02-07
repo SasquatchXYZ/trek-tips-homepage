@@ -34,11 +34,17 @@ class EmailForm extends Component {
     open: false,
     messageShow: false,
     message: '',
-    email: ''
+    email: '',
+    alertShow: false
+  };
+
+  handleAlertClose = () => {
+    this.setState({alertShow: false})
   };
 
   handleClickOpen = () => {
-    this.setState({open: true})
+    this.setState({open: true});
+    setInterval(this.handleAlertClose, 3000)
   };
 
   handleClose = () => {
@@ -66,7 +72,8 @@ class EmailForm extends Component {
             open: false,
             messageShow: false,
             message: '',
-            email: ''
+            email: '',
+            alertShow: true
           });
         })
         .catch(err => {
@@ -138,6 +145,25 @@ class EmailForm extends Component {
             </DialogActions>
           </Dialog>
         </Grid>
+
+        <Dialog
+          open={this.state.alertShow}
+          onClose={this.handleAlertClose}
+          aria-labelledby="simple-dialog-title"
+          aria-describedby="simple-dialog-description"
+        >
+          <DialogTitle id="simple-dialog-title">{"Success!"}</DialogTitle>
+          <DialogContent>
+            <DialogContentText id="simple-dialog-description" color="primary">
+              Email Submitted
+            </DialogContentText>
+          </DialogContent>
+          {/*<DialogActions>
+            <Button onClick={this.handleAlertClose} color="primary">
+              Close
+            </Button>
+          </DialogActions>*/}
+        </Dialog>
       </div>
     );
   }
