@@ -22,7 +22,7 @@ module.exports = {
         .catch(err => res.status(502).json(err))
     } else {
       console.log('That is not a valid Email...');
-      res.status(502).send('test')
+      res.status(502).send('That is not a valid Email.')
     }
 
     /*db.Email

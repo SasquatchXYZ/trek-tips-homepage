@@ -84,19 +84,6 @@ class EmailForm extends Component {
         message: 'Please Enter a valid Email.'
       })
     }
-
-
-    /*if (emailRX.test(this.state.email)) {
-      console.log('Send to Database!');
-      this.setState({
-        open: false,
-        message: false,
-        email: ''
-      });
-    } else {
-      console.log('That is not a valid Email...');
-      this.setState({message: true})
-    }*/
   };
 
   render() {
