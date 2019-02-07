@@ -58,10 +58,10 @@ class ControlledExpansionPanels extends React.Component {
           <ExpansionPanelDetails>
             <Typography color="primary">
               Travelling can be stressful, and it can seem daunting to research things to do or see in a completely new
-              and unfamiliar location, so we aim to take some of that stress away. By selecting your personal
+              and unfamiliar location, so we aim to take some of that stress away.  By selecting your personal
               preferences Trek Tips will attempt to give you suggestions tailored specifically to you.
               <br/>
-              You don't have to be travelling to use Trek Tips either. Since it uses your selected preferences, you can
+              You don't have to be travelling to use Trek Tips either.  Since it uses your selected preferences, you can
               use it wherever you are to find restaurants or events you may not have discovered before.
             </Typography>
           </ExpansionPanelDetails>
@@ -72,7 +72,7 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              To set up an account you simply need an email address. We also give you the option of signing in with
+              To set up an account you simply need an email address.  We also give you the option of signing in with
               Google or Facebook if you would prefer those methods.
             </Typography>
           </ExpansionPanelDetails>
@@ -83,7 +83,7 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              Yes! You are able to bookmark and save anything you come across to view later. You can also mark these
+              Yes! You are able to bookmark and save anything you come across to view later.  You can also mark these
               places has having been visited, but still keep them saved for your own personal history.
             </Typography>
           </ExpansionPanelDetails>
@@ -94,9 +94,9 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              Trek Tips only requires an email address to sign up; no other personal information is required. If you
+              Trek Tips only requires an email address to sign up; no other personal information is required.  If you
               chose to sign in using Facebook or Google, the only information that is collected from those sites is your
-              name and email if it is listed. No additional information is necessary to use Trek Tips.
+              name and email if it is listed.  No additional information is necessary to use Trek Tips.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -117,7 +117,9 @@ class ControlledExpansionPanels extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography color="primary">
-              Currently Trek Tips is in development before release, but in the future Trek Tips will be available on both iOS and Android from the Apple Store and Google Play Store respectively.  If you wish you get updates on the apps progress you can submit your email address below.
+              Currently Trek Tips is in development before release, but in the future Trek Tips will be available on
+              both iOS and Android from the Apple Store and Google Play Store respectively.  If you wish you get updates
+              on the apps progress you can submit your email address below.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
