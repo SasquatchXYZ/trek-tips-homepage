@@ -11,7 +11,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import API from '../utils/API';
-// import Icon from '@material-ui/core/Icon'
 
 const styles = theme => ({
   root: {
@@ -95,9 +94,6 @@ class EmailForm extends Component {
             <Typography variant="h4" color="primary">
               Get Trek Tips Updates
             </Typography>
-            {/*<Typography variant="subtitle1">
-              Standard license
-            </Typography>*/}
           </Grid>
           <Grid item>
             <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
