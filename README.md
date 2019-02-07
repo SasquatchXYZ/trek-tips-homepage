@@ -3,9 +3,7 @@
 
 Trek Tips is an Mobile Application using React native currently in development.  This is the information page for the application.
 
-![Screenshot](client/public/)
-
-![Screenshot](client/public/)
+![Screenshot](client/public/screenshot.png)
 
 ## Getting Started
 
@@ -43,20 +41,21 @@ mongoose
 concurrently        
 
 For the React App:
+
+@material-ui/core
+@material-ui/icons
 axios               
 prop-types          
 react               
-react-alert         
-react-alert-template-basic
 react-dom       
 react-router-dom    
 react-scripts
 react-transition-group               
 ```
 
-## Running 'MERN-Library'
+## Running 'Trek Tips Homepage'
 
-To run MERN-Library locally you will need to have MongoDB running on your computer, you can then begin the server simply by path into the root folder for the application and running:
+To run locally you will need to have MongoDB running on your computer, you can then begin the server simply by path into the root folder for the application and running:
 
 ```
 npm start
@@ -66,7 +65,7 @@ As per the package.json... with it being in dev mode (which is checks for), it w
 
 ## Deployment
 
-* [Deployed Site]()
+* [Deployed Site](https://trek-tips-info.herokuapp.com/)
 
 I personally have this application deployed using Heroku, with mLab serving serving as the remote MongoDB database.  The steps to deploy in this manner are as follows:
 
@@ -85,17 +84,17 @@ Then:
 ```
 git push heroku master
 ```
-Heroku automatically sets the NODE_ENV to Production and will thus run the build commands within the package.json.  Additionally, in order to be able to utilize the Google Books API, you will have to provide your Heroku Application with your API key for the site.  This can be done in your application settings on Heroku.
+Heroku automatically sets the NODE_ENV to Production and will thus run the build commands within the package.json.
 
 
 ## Built With
 
 * [React](https://reactjs.org/) - JavaScript Library
+* [Material-UI](https://material-ui.com/) - CSS Framework
 * [Node.js](https://nodejs.org/en/) - Runtime Environment
 * [Express.js](https://expressjs.com/) - Web Framework
 * [Mongoose](https://mongoosejs.com/) - MongoDB Object Modeling
 * [MongoDB](https://www.mongodb.com/) - Database
-* [Bootstrap](https://getbootstrap.com/) - CSS Framework
 * [gitignore.io](https://www.gitignore.io/) - For creating the .gitignore
 * [WebStorm](https://www.jetbrains.com/webstorm/) - JavaScript IDE
 
