@@ -86,6 +86,9 @@ git push heroku master
 ```
 Heroku automatically sets the NODE_ENV to Production and will thus run the build commands within the package.json.
 
+### External Links (In Development)
+* [App Repository](https://github.com/parkmee/trek-tips)
+* [Server Repository](https://github.com/parkmee/trek-tips-server)
 
 ## Built With
 
