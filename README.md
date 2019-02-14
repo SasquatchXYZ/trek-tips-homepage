@@ -3,6 +3,10 @@
 
 Trek Tips is an Mobile Application using React native currently in development.  This is the information page for the application.
 
+#### External Links (In Development)
+* [App Repository](https://github.com/parkmee/trek-tips)
+* [Server Repository](https://github.com/parkmee/trek-tips-server)
+
 ![Screenshot](client/public/screenshot.png)
 
 ## Getting Started
@@ -85,10 +89,6 @@ Then:
 git push heroku master
 ```
 Heroku automatically sets the NODE_ENV to Production and will thus run the build commands within the package.json.
-
-### External Links (In Development)
-* [App Repository](https://github.com/parkmee/trek-tips)
-* [Server Repository](https://github.com/parkmee/trek-tips-server)
 
 ## Built With
 
